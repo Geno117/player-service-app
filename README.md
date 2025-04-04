@@ -1,3 +1,6 @@
+# Introduction
+While doing some interviews, I was asked to take a look at this repo and found it to be a great platform to learn how to implement local chat. I will be using this repo to document my progress.
+
 # ⚾ Player Service
 
 Player Service is a backend application that serves baseball player data. In addition, Player service integrates with [Ollama](https://github.com/ollama/ollama/blob/main/docs/api.md), which allows us to run the [tinyllama LLM]((https://ollama.com/library/tinyllama)) locally.
