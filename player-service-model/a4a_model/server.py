@@ -12,6 +12,8 @@ import joblib
 from pydantic import BaseModel
 
 nn_model = joblib.load("team_model.joblib")
+print(type(nn_model))
+print(nn_model)
 player_db = pd.read_csv("features_db.csv")
 all_players = set(player_db["playerID"])
 features = ["birthZ", "heightZ", "weightZ", "batsN", "throwsN"]

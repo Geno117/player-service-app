@@ -45,3 +45,11 @@ class PlayerService:
         self.cursor.execute("PRAGMA table_info(players)")
         columns = [column[1] for column in self.cursor.fetchall()]
         return columns
+    
+    def search_by_query(self, query, placeholder = None):
+        res = None
+        if placeholder:
+            res = self.cursor.execute(query,(placeholder,)).fetchall()
+        else:
+            res = self.cursor.execute(query).fetchall()
+        return res
